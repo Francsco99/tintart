@@ -22,7 +22,7 @@ body{
 /*HEADER E NAVBAR*/
 .header-container{
     min-height: 100vh;
-    background-image: url("images/banner.png");
+    background-image: url("../images/png/banner.png");
 }
 
 .nav-link{
