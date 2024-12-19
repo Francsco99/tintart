@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+Head: h27%
+Presentazione: h13%
+Servizi: h17%
+Lavorato Per: h16%
+Contattaci: h19%
+Foot: h8%
+*/
+:root{
+    --primary-background-color: #E8E5DC;
+    --secundary-background-color: #1A1006;
+    --logo-secundary-color: #1E1E1E;
+
+
+}
+body{
+    font-family: "Archivo", serif;
+}
+.container-top{
+    min-height: 100vh;
+    background-image: url("images/banner.png");
+}
+
+.nav-link{
+    color: #ffff;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 5rem;
+}
+.brand-name{
+    color: white;
+    margin-top: 8rem;
+    margin-left: 5rem;
+}
+.brand-title{
+    font-weight: bold;
+    font-size: 6.3rem;
+}
+
+.brand-subtitle{
+    font-size: 2.3rem;
+    margin-top: -1rem;
+    margin-left: 2rem;
+}
+
+
+.menu-bottom{
+    background-color: var(--secundary-background-color);
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 14px;
+    font-size: 1.8rem;
+}
+
+.menu-bottom-item{
+    text-decoration: none;
+    color:white;
+}
+
+.menu-bottom-separator{
+    text-decoration: none;
+    color:white;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.container-description{
+    min-height: 15vh;
+    background-color: var(--primary-background-color);
+    padding: 3rem 6rem;
+    overflow: hidden;
+}
+
+.description-text{
+    font-size: 2.5rem;
+}
+.line{
+    max-width: 119px;
+    height: 2px;
+    background-color: var(--secundary-background-color);
+}
+.contact-text{
+    font-size: 1.5rem;
+    color: var(--secundary-background-color);
+    text-decoration: none;
+}
+
+.logo-transparent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    z-index: 1;
+}
+
+
+.service-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Sfumatura scura */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service-card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.overlay p {
+    font-size: 0.9rem;
+}
+
+
+.container-partner{
+    min-height: 15vh;
+    background-color: var(--primary-background-color);
+}
+
+.container-contact{
+    min-height: 15vh;
+    background-color: var(--primary-background-color);
+}
+
+footer{
+    min-height: 15vh;
+    background-color: var(--secundary-background-color);
+}
