@@ -14,6 +14,9 @@ Foot: h8%
 }
 body{
     font-family: "Archivo", serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 /*HEADER E NAVBAR*/
@@ -211,10 +214,13 @@ textarea {
     padding-top: 1rem;
 }
 
+.footer-logo-container{
+    padding-left: 0px;
+}
+
 .footer-logo {
     position: relative;
 }
-
 
 .footer-logo-front {
     width: 30%;
