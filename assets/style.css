@@ -15,7 +15,9 @@ Foot: h8%
 body{
     font-family: "Archivo", serif;
 }
-.container-top{
+
+/*HEADER E NAVBAR*/
+.header-container{
     min-height: 100vh;
     background-image: url("images/banner.png");
 }
@@ -65,7 +67,8 @@ body{
     margin-left: 1.5rem;
 }
 
-.container-description{
+/*DESCRIPTION*/
+.description-container{
     min-height: 15vh;
     background-color: var(--primary-color);
     padding: 3rem 6rem;
@@ -94,6 +97,7 @@ body{
     z-index: 1;
 }
 
+/*SERVICES*/
 .service-card {
     position: relative;
     overflow: hidden;
@@ -130,7 +134,8 @@ body{
     transform: scale(1.1);
 }
 
-.container-partner{
+/*PARTNERS*/
+.partner-container{
     padding-top: 5rem;
     background-color: var(--primary-color);
 }
@@ -153,4 +158,101 @@ body{
 .logo-subtitle{
     font-size: 1.2rem;
     opacity: 0.7;
+}
+
+/*CONTACTS*/
+.contact-container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: var(--primary-color);
+}
+
+.contact-title {
+    font-size: 2.7rem;
+    color: var(--secundary-color);
+}
+
+.contact-subtitle {
+    font-size: 1.5rem;
+    color: var(--secundary-color);
+}
+
+.form-control {
+    border-width: 2px;
+    font-size: 1rem;
+}
+
+.btn-dark {
+    background-color: var(--secundary-color);
+    color: #ffffff;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-dark:hover {
+    background-color: #3C2E21; /* Colore più chiaro al passaggio del mouse */
+}
+
+textarea {
+    resize: none; /* Disabilita il ridimensionamento */
+}
+
+/*FOOTER*/
+.footer-container {
+    background-color: var(--secundary-color);
+    color: var(--primary-color);
+    padding-top: 1rem;
+}
+
+.footer-logo {
+    position: relative;
+}
+
+
+.footer-logo-front {
+    width: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 2rem;
+}
+
+.footer-heading {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.footer-description{
+    margin-top: 1.5rem;
+}
+
+.footer-address{
+    margin-top: 3rem;
+}
+
+.footer-ajalab{
+    padding: 0.5rem;
+}
+
+.footer-ajalab p{
+    font-size: 1.2rem;
+}
+
+.footer-link {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-icon-image {
+    max-width: 50px;
+    height: auto;
 }

@@ -9,7 +9,7 @@
       <link rel="stylesheet" href="assets/style.css">
    </head>
    <body>
-      <div class="container-top position-relative">
+      <div class="header-container position-relative">
          <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                <!-- Logo a sinistra -->
@@ -52,7 +52,8 @@
             </ul>
          </div>
       </div>
-      <div class="container-description position-relative container-fluid">
+
+      <div class="description-container position-relative container-fluid">
          <p class="description-text">
             Da oltre 15 anni, TintArt offre servizi di pittura edile, 
             pitture decorative, cartongessi e controsoffitti per clienti 
@@ -66,7 +67,7 @@
          <img src="assets/images/logo_transparent.svg" alt="Logo" class="logo-transparent mt-4">
       </div>
     
-        <div id="services" class="container-services container-fluid px-0">
+        <div id="services" class="services-container container-fluid px-0">
             <div class="row gx-0">
                 <!-- Immagine 1 -->
                 <div class="col-6 col-md-3 d-flex flex-column">
@@ -123,8 +124,8 @@
         </div> 
 
 
-      <div class="container-partner container-fluid text-center">
-        <h2 class="partner-title">ABBIAMO LAVORATO PER</h2>
+      <div class="partner-container container-fluid text-center">
+        <p class="partner-title">ABBIAMO LAVORATO PER</p>
 
         <div class="row justify-content-center align-items-center">
             <div class="col-4 col-md-2">
@@ -142,51 +143,98 @@
         </div>
       </div>
 
+      <div class="contact-container">
+            <div class="container">
+                <!-- Prima riga: Titolo -->
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="contact-title">CONTATTACI</p>
+                    </div>
+                </div>
+        
+                <!-- Seconda riga: Scritta -->
+                <div class="row text-center mb-3 px-5">
+                    <div class="col-4">
+                        <p class="contact-subtitle">Scrivici una email</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="contact-subtitle">o</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="contact-subtitle">Chiamaci al numero</p>
+                    </div>
+                </div>
+        
+                <!-- Terza riga: Form e pulsante -->
+                <div class="row align-items-center px-5">
+                    <!-- Colonna sinistra: Form -->
+                    <div class="col-12 col-md-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="email" class="form-label visually-hidden">Email</label>
+                                <input type="email" class="form-control border-dark" id="email" placeholder="Inserisci il tuo indirizzo email...">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label visually-hidden">Messaggio</label>
+                                <textarea class="form-control border-dark" id="message" rows="4" placeholder="Inserisci il testo..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-dark">Invia email</button>
+                        </form>
+                    </div>
+        
+                    <!-- Colonna destra: Pulsante chiamata -->
+                    <div class="col-12 col-md-6 text-center">
+                        <a href="tel:+393477176894" class="btn btn-dark btn-lg px-5">347 7176894</a>
+                    </div>
+                </div>
+            </div>
+      </div>
+
       <footer class="footer-container">
         <div class="container-fluid">
-            <div class="row justify-content-between align-items-center">
-                <!-- Logo con due SVG sovrapposti -->
+            <div class="row justify-content-between align-items-start">
                 <div class="col-12 col-md-3 text-start">
                     <div class="footer-logo position-relative">
-                        <!-- Primo SVG -->
                         <img src="assets/images/logo_footer.svg" alt="Logo Sfondo" class="footer-logo-back">
-                        <!-- Secondo SVG -->
                         <img src="assets/images/logo.svg" alt="Logo Fronte" class="footer-logo-front position-absolute">
                     </div>
                 </div>
     
-                <!-- Sezione contatti -->
-                <div class="col-12 col-md-3 text-start">
-                    <h5 class="footer-heading">CONTATTI</h5>
-                    <p class="footer-text">email: <a href="mailto:info@tintart.it" class="footer-link">info@tintart.it</a></p>
-                    <p class="footer-text">Tel: +39 347 7176894</p>
-                </div>
-    
-                <!-- Sezione info ditta -->
-                <div class="col-12 col-md-3 text-start">
-                    <h5 class="footer-heading">INFO DITTA</h5>
-                    <p class="footer-text">P.I. 123456789</p>
-                    <p class="footer-text">TintArt s.p.a - Via F. Baracca, 19</p>
-                    <p class="footer-text">64011 Alba Adriatica (TE)</p>
-                </div>
-    
-                <!-- Sezione orari -->
-                <div class="col-12 col-md-2 text-start">
-                    <h5 class="footer-heading">ORARI</h5>
-                    <p class="footer-text">Lun - Sab</p>
-                    <p class="footer-text">8:00 - 19:00</p>
-                </div>
-    
-                <!-- Icona e brand Ajalàb -->
-                <div class="col-12 col-md-1 text-end mt-4 mt-md-0">
-                    <div class="footer-icon mb-2">
-                        <img src="assets/images/ajalab_logo.svg" alt="Icona" class="footer-icon-image">
+                <div class="footer-description col-12 col-md-6">
+                    <div class="row">
+                        <div class="col-4">
+                            <p class="footer-heading">CONTATTI</p>
+                            <p class="footer-text">email: <a href="mailto:info@tintart.it" class="footer-link">info@tintart.it</a></p>
+                            <p class="footer-text">Tel: +39 347 7176894</p>
+                        </div>
+                        <div class="col-4">
+                            <p class="footer-heading">INFO DITTA</p>
+                            <p class="footer-text">P.I. 123456789</p>
+                        </div>
+                        <div class="col-4">
+                            <p class="footer-heading">ORARI</p>
+                            <p class="footer-text">Lun - Sab</p>
+                            <p class="footer-text">8:00 - 19:00</p>
+                        </div>
                     </div>
-                    <p class="footer-text mb-0">Ajalàb</p>
+
+                    <div class="row footer-address">
+                        <div class="col-12">
+                            <p class="footer-text">TintArt s.p.a Via F. Baracca, 19 64011 Alba Adriatica (TE)</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-md-3 text-end align-self-end">
+                    <a href="https://ajalab.it" class="footer-ajalab footer-link d-flex justify-content-end align-items-center">
+                        <p class="footer-text me-2">Ajalàb</p>
+                        <img src="assets/images/ajalab_logo.svg" alt="Ajalàb Logo" class="footer-icon-image">
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
+    
     
     
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
