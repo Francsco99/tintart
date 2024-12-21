@@ -1,15 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
-/*
-Head: h27%
-Presentazione: h13%
-Servizi: h17%
-Lavorato Per: h16%
-Contattaci: h19%
-Foot: h8%
-*/
+
 :root{
     --primary-color: #E8E5DC;
     --secundary-color: #1A1006;
+
+
 
 }
 body{
@@ -25,40 +20,39 @@ body{
     background-image: url("../images/png/banner.png");
     background-repeat: no-repeat;
     background-size: cover; 
-    background-position: center; 
+    background-position: center;
 }
 
 .nav-link{
-    color: #ffff;
+    font-size: 2vw;
+    color: white;
     font-weight: 600 !important;
-    font-size: 25px;
 }
 
 .navbar-nav .nav-item {
-    margin-right: 5rem;
+    margin-right: 5rem; /*spazio tra i link*/
 }
+
 .brand-name{
     color: white;
-    margin-top: 8rem;
+    margin-top: 8rem; /*posizionamento del nome TINTART*/
     margin-left: 5rem;
 }
+
 .brand-title{
+    font-size: 8vw;
     font-weight: bold !important;
-    font-size: 6.3rem;
 }
 
 .brand-subtitle{
-    font-size: 2.3rem;
-    margin-top: -1rem;
-    margin-left: 2rem;
+    font-size: 2vw;
 }
 
-
 .menu-bottom{
+    font-size: 1.5vw;
     background-color: var(--secundary-color);
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 14px;
-    font-size: 1.8rem;
 }
 
 .menu-bottom-item{
@@ -77,20 +71,20 @@ body{
 .description-container{
     min-height: 15vh;
     background-color: var(--primary-color);
-    padding: 3rem 6rem;
+    padding: 3rem 6rem; /*DA FARE MEDIA QUERY*/
     overflow: hidden;
 }
 
 .description-text{
-    font-size: 2.5rem;
+    font-size: min(8vw,3.5vw); /*DA FARE MEDIA QUERY*/
 }
 .line{
-    max-width: 119px;
+    max-width: 119px; /*DA FARE MEDIA QUERY*/
     height: 2px;
     background-color: var(--secundary-color);
 }
 .contact-text{
-    font-size: 1.5rem;
+    font-size: 2vw;
     color: var(--secundary-color);
     text-decoration: none;
 }
@@ -101,6 +95,20 @@ body{
     right: 0;
     width: 20%;
     z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .description-container{
+        padding: 1rem
+    }
+
+    .line{
+        max-width: 50px;
+    }
+
+    .logo-transparent{
+        width: 35%;
+    }
 }
 
 /*SERVICES*/

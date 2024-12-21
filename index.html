@@ -9,49 +9,51 @@
       <link rel="stylesheet" href="assets/css/style.css">
    </head>
    <body>
-      <div class="header-container position-relative">
-         <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-               <!-- Logo a sinistra -->
-               <a class="navbar-brand ms-3" href="#">
-               <img src="assets/images/svg/logo.svg" alt="Logo">
-               </a>
-               <!-- Pulsante per il menu responsivo -->
-               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-               </button>
-               <!-- Collegamenti -->
-               <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav ms-auto">
-                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Servizi</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contatti</a>
-                     </li>
-                  </ul>
-               </div>
-            </div>
-         </nav>
-         <div class="position-absolute brand-name">
-            <h1 class="brand-title">TINTART</h1>
-            <p class="brand-subtitle">di Vincenzo Messina</p>
-         </div>
-         <div class="menu-bottom position-absolute bottom-0 start-50 translate-middle-x px-5 py-2 mb-3">
-            <ul class="d-flex list-unstyled mb-0">
-               <li><a href="#pitturaEdile" class="menu-bottom-item">Pittura</a></li>
-               <li><a class="menu-bottom-separator">|</a></li>
-               <li><a href="#pitturaDecorativa" class="menu-bottom-item">Decorativi</a></li>
-               <li><a class="menu-bottom-separator">|</a></li>
-               <li><a href="#constrosoffitti" class="menu-bottom-item">Controsoffitti</a></li>
-               <li><a class="menu-bottom-separator">|</a></li>
-               <li><a href="#cartongessi" class="menu-bottom-item">Cartongessi</a></li>
+      <!-- HEADER CONTAINER -->
+<div class="header-container position-relative">
+   <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+         <!-- Logo a sinistra -->
+         <a class="navbar-brand ms-3" href="#">
+         <img src="assets/images/svg/logo.svg" alt="Logo" class="logo-img img-fluid">
+         </a>
+         <!-- Pulsante per il menu responsivo -->
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <!-- Collegamenti -->
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#services">Servizi</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contatti</a>
+               </li>
             </ul>
          </div>
       </div>
+   </nav>
+   <div class="position-absolute brand-name text-start">
+      <h1 class="brand-title">TINTART</h1>
+      <p class="brand-subtitle">di Vincenzo Messina</p>
+   </div>
+   <div class="menu-bottom position-absolute bottom-0 start-50 translate-middle-x px-4 py-2 mb-3 text-center">
+      <ul class="d-flex flex-wrap list-unstyled mb-0 justify-content-center">
+         <li><a href="#pitturaEdile" class="menu-bottom-item">Pittura</a></li>
+         <li><a class="menu-bottom-separator">|</a></li>
+         <li><a href="#pitturaDecorativa" class="menu-bottom-item">Decorativi</a></li>
+         <li><a class="menu-bottom-separator">|</a></li>
+         <li><a href="#constrosoffitti" class="menu-bottom-item">Controsoffitti</a></li>
+         <li><a class="menu-bottom-separator">|</a></li>
+         <li><a href="#cartongessi" class="menu-bottom-item">Cartongessi</a></li>
+      </ul>
+   </div>
+</div>
+
 
       <div class="description-container position-relative container-fluid">
          <p class="description-text">
@@ -62,13 +64,13 @@
          </p>
          <div class="contact-description-container container-fluid d-flex align-items-center mt-5">
             <div class="line flex-grow-1 me-3 ms-3"></div>
-            <a class="contact-text mb-0">Contattaci</a>
+            <a href="#contact" class="contact-text mb-0">Contattaci</a>
          </div>
          <img src="assets/images/svg/logo_transparent.svg" alt="Logo" class="logo-transparent mt-4">
       </div>
     
         <div id="services" class="services-container container-fluid px-0">
-            <div class="row">
+            <div class="row gx-0">
                 <!-- Immagine 1 -->
                 <div id="pitturaDecorativa" class="col-6 col-md-3 d-flex flex-column">
                     <div class="service-card position-relative flex-grow-1 d-flex flex-column justify-content-between">
