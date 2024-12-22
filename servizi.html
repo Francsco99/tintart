@@ -34,7 +34,7 @@
                         <a class="nav-link selected dark" href="servizi.html">Servizi</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link dark" href="index.html#contact">Contatti</a>
+                        <a class="nav-link dark" href="index.html#contacts">Contatti</a>
                      </li>
                   </ul>
                </div>
@@ -55,22 +55,21 @@
          </div>
       </div>
       <!--MENU TOP CONTAINER-->
-      <div class="menu-top-container container-fluid position-relative py-3">
-         <div class="menu-top text-center">
-            <ul class="d-flex flex-wrap list-unstyled mb-0 justify-content-center">
-               <li><a href="#pitturaEdile" class="menu-top-item alternative">Pittura</a></li>
-               <li><span class="menu-top-separator alternative">|</span></li>
-               <li><a href="#pitturaDecorativa" class="menu-top-item alternative">Decorativi</a></li>
-               <li><span class="menu-top-separator alternative">|</span></li>
-               <li><a href="#constrosoffitti" class="menu-top-item alternative">Controsoffitti</a></li>
-               <li><span class="menu-top-separator alternative">|</span></li>
-               <li><a href="#cartongessi" class="menu-top-item alternative">Cartongessi</a></li>
-            </ul>
-         </div>
+      <div class="menu-top-container position-relative container-fluid py-4">
+         <ul class="d-flex flex-wrap list-unstyled mb-0 justify-content-center">
+            <li><a href="#pitturaDecorativa" class="menu-top-item">Decorativi</a></li>
+            <li><span class="menu-top-separator">|</span></li>
+            <li><a href="#pitturaEdile" class="menu-top-item">Pittura</a></li>
+            <li><span class="menu-top-separator">|</span></li>
+            <li><a href="#cartongessi" class="menu-top-item">Cartongessi</a></li>
+            <li><span class="menu-top-separator">|</span></li>
+            <li><a href="#controsoffitti" class="menu-top-item">Controsoffitti</a></li>
+         </ul>
       </div>
       <!--SERVIZI CARDS CONTAINER-->
       <div class="container-fluid services-cards-container">
-         <div class="row py-3">
+         <!--Pittura decorativa-->
+         <div id="pitturaDecorativa" class="row py-3">
             <div class="col-6 px-0">
                <img src="assets/images/jpg/decorativa-1.jpg" alt="Pittura Decorativa" class="service-card-image img-fluid">
             </div>
@@ -88,7 +87,8 @@
                </div>
             </div>
          </div>
-         <div class="row py-3">
+         <!--Pittura Edile-->
+         <div id="pitturaEdile" class="row py-3">
             <div class="col-6 px-3 text-start d-flex flex-column justify-content-between mb-3">
                <p class="service-card-description">Offriamo servizi di verniciatura per interni 
                   ed esterni, utilizzando materiali di alta qualità per garantire una 
@@ -107,7 +107,8 @@
                <img src="assets/images/jpg/pittura-2.jpg" alt="Pittura Edile" class="service-card-image img-fluid">
             </div>
          </div>
-         <div class="row py-3">
+         <!--Cartongessi-->
+         <div id="cartongessi" class="row py-3">
             <div class="col-6 px-0">
                <img src="assets/images/jpg/cartongesso-2.jpg" alt="Cartongessi" class="service-card-image img-fluid">
             </div>
@@ -125,7 +126,8 @@
                </div>
             </div>
          </div>
-         <div class="row py-3">
+         <!--Controsoffitti-->
+         <div id="controsoffitti" class="row py-3">
             <div class="col-6 px-3 text-start d-flex flex-column justify-content-between mb-3">
                <p class="service-card-description">Installiamo controsoffitti sia decorativi 
                   che tecnici, perfetti per nascondere impianti, migliorare l’illuminazione 
