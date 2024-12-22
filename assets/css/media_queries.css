@@ -1,7 +1,8 @@
 @media (max-width: 768px) {
     /*HEADER E NAVBAR*/
-    .header-container{
-        height: 60vh;
+    .header-container,
+    .header-container.services{
+        height: 40vh;
     }
     .nav-link{
         font-size: 7vw;
@@ -55,11 +56,11 @@
     }
 
     /*SERVICES*/
-    .service-card-image{
+    .service-image{
         height: 300px;
     }
 
-    .service-card-title {
+    .service-title {
         font-size: 1.2rem;
         display: flex;
     }

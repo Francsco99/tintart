@@ -68,7 +68,6 @@ body{
 
 @media (max-width: 768px) {
     .service-card-image{
-        width: 360px;
-        height: 230px;
+        height: 150px;
     }
 }
