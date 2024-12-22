@@ -9,9 +9,9 @@
       <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
       <link rel="manifest" href="favicon_io/site.webmanifest">
-      <title>TintArt</title>
       <link rel="stylesheet" href="assets/css/style.css">
       <link rel="stylesheet" href="assets/css/media_queries.css">
+      <title>TintArt</title>
    </head>
    <body>
       <!-- HEADER CONTAINER -->
@@ -42,25 +42,28 @@
                </div>
             </div>
          </nav>
-         <div class="position-absolute brand-name text-start">
-            <h1 class="brand-title">TINTART</h1>
-            <p class="brand-subtitle">di Vincenzo Messina</p>
+         <!--HEADER TITLE-->
+         <div class="row header-title-container ms-5 mt-5">
+            <div class="col-6">
+               <p class="header-title">TINTART</p>
+               <p class="header-subtitle">di Vincenzo Messina</p>
+            </div>
          </div>
       </div>
-
+      <!--MENU BOTTOM CONTAINER-->
+      <div class="menu-top-container position-relative container-fluid py-4">
+         <ul class="d-flex flex-wrap list-unstyled mb-0 justify-content-center">
+            <li><a href="#pitturaEdile" class="menu-top-item">Pittura</a></li>
+            <li><span class="menu-top-separator">|</span></li>
+            <li><a href="#pitturaDecorativa" class="menu-top-item">Decorativi</a></li>
+            <li><span class="menu-top-separator">|</span></li>
+            <li><a href="#constrosoffitti" class="menu-top-item">Controsoffitti</a></li>
+            <li><span class="menu-top-separator">|</span></li>
+            <li><a href="#cartongessi" class="menu-top-item">Cartongessi</a></li>
+         </ul>
+      </div>
       <!-- DESCRIPTION CONTAINER -->
       <div class="description-container position-relative container-fluid">
-         <div class="menu-bottom text-center">
-            <ul class="d-flex flex-wrap list-unstyled mb-0 justify-content-center">
-               <li><a href="#pitturaEdile" class="menu-bottom-item">Pittura</a></li>
-               <li><span class="menu-bottom-separator">|</span></li>
-               <li><a href="#pitturaDecorativa" class="menu-bottom-item">Decorativi</a></li>
-               <li><span class="menu-bottom-separator">|</span></li>
-               <li><a href="#constrosoffitti" class="menu-bottom-item">Controsoffitti</a></li>
-               <li><span class="menu-bottom-separator">|</span></li>
-               <li><a href="#cartongessi" class="menu-bottom-item">Cartongessi</a></li>
-            </ul>
-         </div>
          <p class="description-text">
             Da oltre 15 anni, TintArt offre servizi di pittura edile, 
             pitture decorative, cartongessi e controsoffitti per clienti 
@@ -73,7 +76,6 @@
          </div>
          <img src="assets/images/svg/logo_transparent.svg" alt="Logo" class="logo-transparent mt-4">
       </div>
-
       <!--SERVICES CONTAINER-->
       <div id="services" class="services-container container-fluid px-0">
          <div class="row gx-0">
@@ -127,7 +129,6 @@
             </div>
          </div>
       </div>
-
       <!--PARTNER CONTAINER-->
       <div id="portfolio "class="partner-container container-fluid text-center">
          <p class="partner-title">ABBIAMO LAVORATO PER</p>
@@ -158,49 +159,43 @@
             <a href="#contact" class="contact-text mb-0">Guarda i nostri <span class="highlight"> Lavori</span></a>
          </div>
       </div>
-
       <!--CONTACTS CONTAINER-->
-         <div id="contact" class="contact-container container-fluid">
-
-            <div class="row">
-               <div class="col-12 text-center">
-                  <p class="contact-title">CONTATTACI</p>
-               </div>
-            </div>
-
-            <div class="row text-center mb-3">
-               <div class="col">
-                  <p class="contact-subtitle">Scrivici una email</p>
-               </div>
-               <div class="col">
-                  <p class="contact-subtitle">o</p>
-               </div>
-               <div class="col">
-                  <p class="contact-subtitle">Chiamaci al numero</p>
-               </div>
-            </div>
-
-            <div class="row">
-               <div class="col-8">
-                  <form>
-                     <div class="mb-3">
-                        <label for="email" class="form-label visually-hidden">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Inserisci il tuo indirizzo email...">
-                     </div>
-                     <div class="mb-3">
-                        <label for="message" class="form-label visually-hidden">Messaggio</label>
-                        <textarea class="form-control" id="message" rows="4" placeholder="Inserisci il testo..."></textarea>
-                     </div>
-                     <button type="submit" class="btn btn-lg btn-dark">Invia email</button>
-                  </form>
-               </div>
-
-               <div class="col-4 text-center">
-                  <a href="tel:+393477176894" class="btn btn-dark btn-lg px-5">347 7176894</a>
-               </div>
+      <div id="contact" class="contact-container container-fluid">
+         <div class="row">
+            <div class="col-12 text-center">
+               <p class="contact-title">CONTATTACI</p>
             </div>
          </div>
-
+         <div class="row text-center mb-3">
+            <div class="col">
+               <p class="contact-subtitle">Scrivici una email</p>
+            </div>
+            <div class="col">
+               <p class="contact-subtitle">o</p>
+            </div>
+            <div class="col">
+               <p class="contact-subtitle">Chiamaci al numero</p>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-8">
+               <form>
+                  <div class="mb-3">
+                     <label for="email" class="form-label visually-hidden">Email</label>
+                     <input type="email" class="form-control" id="email" placeholder="Inserisci il tuo indirizzo email...">
+                  </div>
+                  <div class="mb-3">
+                     <label for="message" class="form-label visually-hidden">Messaggio</label>
+                     <textarea class="form-control" id="message" rows="4" placeholder="Inserisci il testo..."></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-lg btn-dark">Invia email</button>
+               </form>
+            </div>
+            <div class="col-4 text-center">
+               <a href="tel:+393477176894" class="btn btn-dark btn-lg px-5">347 7176894</a>
+            </div>
+         </div>
+      </div>
       <div class="contact-bottom-container mobile">
          <div class="row">
             <div class="col-12 text-center py-3">
@@ -208,7 +203,6 @@
             </div>
          </div>
       </div>
-
       <!--FOOTER-->
       <footer class="footer-container">
          <div class="container-fluid">

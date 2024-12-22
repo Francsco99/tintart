@@ -52,22 +52,29 @@ a:hover{
     font-weight: 600 !important;
 }
 
+.nav-link.dark{
+    color: var(--secundary-color);
+}
+
 .navbar-nav .nav-item {
     margin-right: 5rem; /*spazio tra i link*/
 }
 
-.brand-name{
+.header-title-container{
     color: white;
-    margin-top: 8rem; /*posizionamento del nome TINTART*/
-    margin-left: 5rem;
 }
 
-.brand-title{
+.header-title-container.dark{
+    color: var(--secundary-color);
+}
+
+.header-title{
     font-size: 8vw;
-    font-weight: bold !important;
+    font-weight: bold;
 }
 
-.brand-subtitle{
+.header-subtitle,
+.header-description{
     font-size: 2vw;
 }
 
@@ -79,18 +86,18 @@ a:hover{
     overflow: hidden;
 }
 
-.menu-bottom{
+.menu-top-container{
+    background-color: var(--primary-color);
     font-size: 2vw;
-    padding-bottom: 2rem;
 }
 
-.menu-bottom-item,
-.menu-bottom-separator{
+.menu-top-item,
+.menu-top-separator{
     color: var(--secundary-color);
     text-decoration: none;
 }
 
-.menu-bottom-separator {
+.menu-top-separator {
     margin: 0 1.5rem;
 }
 

@@ -9,58 +9,65 @@
       <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
       <link rel="manifest" href="favicon_io/site.webmanifest">
-      <title>TintArt | Servizi</title>
       <link rel="stylesheet" href="assets/css/style.css">
       <link rel="stylesheet" href="assets/css/servizi.css">
       <link rel="stylesheet" href="assets/css/media_queries.css">
+      <title>TintArt | Servizi</title>
    </head>
    <body>
       <!-- HEADER CONTAINER -->
-      <div class="header-container services position-relative">
+      <div class="header-container servizi position-relative">
          <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                <a class="navbar-brand ms-3" href="index.html">
                <img src="assets/images/svg/logo_dark.svg" alt="Logo" class="logo-img img-fluid">
                </a>
-
                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
                </button>
-
                <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav ms-auto">
                      <li class="nav-item">
-                        <a class="nav-link" href="lavori.html">Lavori</a>
+                        <a class="nav-link dark" href="lavori.html">Lavori</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link selected" href="servizi.html">Servizi</a>
+                        <a class="nav-link selected dark" href="servizi.html">Servizi</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="index.html#contact">Contatti</a>
+                        <a class="nav-link dark" href="index.html#contact">Contatti</a>
                      </li>
                   </ul>
                </div>
             </div>
          </nav>
-         <div class="position-absolute brand-name text-start">
-            <h1 class="brand-title">SERVIZI</h1>
+         <!--HEADER TITLE-->
+         <div class="row header-title-container dark align-items-center ms-5 mt-5">
+            <div class="col-6">
+               <p class="header-title">SERVIZI</p>
+            </div>
+            <div class="col-6">
+               <p class="header-description">
+                  Scopri i nostri servizi. 
+                  <br>Disponibili in tutta Italia con puntualità e 
+                  professionalità.
+               </p>
+            </div>
          </div>
       </div>
-
-      <div class="menu-bottom-container alternative">
-         <div class="menu-bottom text-center">
+      <!--MENU TOP CONTAINER-->
+      <div class="menu-top-container container-fluid position-relative py-3">
+         <div class="menu-top text-center">
             <ul class="d-flex flex-wrap list-unstyled mb-0 justify-content-center">
-               <li><a href="#pitturaEdile" class="menu-bottom-item alternative">Pittura</a></li>
-               <li><span class="menu-bottom-separator alternative">|</span></li>
-               <li><a href="#pitturaDecorativa" class="menu-bottom-item alternative">Decorativi</a></li>
-               <li><span class="menu-bottom-separator alternative">|</span></li>
-               <li><a href="#constrosoffitti" class="menu-bottom-item alternative">Controsoffitti</a></li>
-               <li><span class="menu-bottom-separator alternative">|</span></li>
-               <li><a href="#cartongessi" class="menu-bottom-item alternative">Cartongessi</a></li>
+               <li><a href="#pitturaEdile" class="menu-top-item alternative">Pittura</a></li>
+               <li><span class="menu-top-separator alternative">|</span></li>
+               <li><a href="#pitturaDecorativa" class="menu-top-item alternative">Decorativi</a></li>
+               <li><span class="menu-top-separator alternative">|</span></li>
+               <li><a href="#constrosoffitti" class="menu-top-item alternative">Controsoffitti</a></li>
+               <li><span class="menu-top-separator alternative">|</span></li>
+               <li><a href="#cartongessi" class="menu-top-item alternative">Cartongessi</a></li>
             </ul>
          </div>
       </div>
-
       <!--SERVIZI CARDS CONTAINER-->
       <div class="container-fluid services-cards-container">
          <div class="row py-3">
@@ -74,7 +81,7 @@
                   andare incontro alle richieste del cliente.
                </p>
                <div class="service-card-link-container container-fluid d-flex align-items-center">
-                  <div class="line services flex-grow-1"></div>
+                  <div class="line flex-grow-1"></div>
                   <a href="#" class="service-card-link">
                   <span>Guarda i nostri lavori di</span><span class="highlight"> Pittura Decorativa</span>
                   </a>
@@ -90,7 +97,7 @@
                   delle superfici.
                </p>
                <div class="service-card-link-container container-fluid d-flex align-items-center">
-                  <div class="line services flex-grow-1"></div>
+                  <div class="line flex-grow-1"></div>
                   <a href="#" class="service-card-link">
                   <span>Guarda i nostri lavori di</span><span class="highlight"> Pittura Edile</span>
                   </a>
@@ -111,7 +118,7 @@
                   con progetti moderni e funzionali.
                </p>
                <div class="service-card-link-container container-fluid d-flex align-items-center">
-                  <div class="line services flex-grow-1"></div>
+                  <div class="line flex-grow-1"></div>
                   <a href="#" class="service-card-link">
                   <span>Guarda i nostri lavori di</span><span class="highlight"> Cartongesso</span>
                   </a>
@@ -126,7 +133,7 @@
                   esigenza, sempre con materiali di qualità.
                </p>
                <div class="service-card-link-container container-fluid d-flex align-items-center">
-                  <div class="line services flex-grow-1"></div>
+                  <div class="line flex-grow-1"></div>
                   <a href="#" class="service-card-link">
                   <span>Guarda i nostri lavori di</span><span class="highlight">  Controsoffitti</span>
                   </a>
@@ -137,7 +144,6 @@
             </div>
          </div>
       </div>
-  
       <div class="contact-bottom-container">
          <div class="row">
             <div class="col-12 text-center">
@@ -150,7 +156,6 @@
             </div>
          </div>
       </div>
-      
       <!--FOOTER-->
       <footer class="footer-container">
          <div class="container-fluid">

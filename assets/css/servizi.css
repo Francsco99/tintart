@@ -12,34 +12,9 @@ body{
     padding: 0;
 }
 
-.header-container.services{
+.header-container.servizi{
     height: 60vh;
     background-image: url('../images/png/decorativa-4.png');
-}
-
-.nav-link{
-    font-size: 2vw;
-    color: var(--secundary-color);
-    font-weight: 600 !important;
-}
-
-.brand-title{
-    font-size: 8vw;
-    font-weight: bold !important;
-    color: var(--secundary-color);
-}
-
-.menu-bottom-container.alternative{
-    padding-top: 2rem;
-    background-color: var(--primary-color);
-}
-
-.menu-bottom-item.alternative{
-    color: var(--secundary-color);
-}
-
-.menu-bottom-separator.alternative{
-    color: var(--secundary-color);
 }
 
 .services-cards-container{
