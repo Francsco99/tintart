@@ -56,13 +56,6 @@ body{
     height: 460px;
 }
 
-.service-card-line{
-    background-color: var(--secundary-color);
-    height: 2px;
-    max-width: 119px;
-    margin-right: 1rem;
-}
-
 .service-card-link{
     color: var(--secundary-color);
     text-decoration: none;
@@ -71,11 +64,6 @@ body{
 
 .service-card-link .highlight{
     color: var(--secundary-color);
-    font-weight: bold;
-}
-
-.service-card-link:hover{
-    text-decoration: underline;
 }
 
 @media (max-width: 768px) {

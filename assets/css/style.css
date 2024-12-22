@@ -12,6 +12,14 @@ body{
     padding: 0;
 }
 
+a:hover{
+    text-decoration: underline;
+}
+
+.highlight{
+    font-weight: bold;
+}
+
 /*HEADER E NAVBAR*/
 .header-container{
     height: 80vh;
@@ -33,7 +41,6 @@ body{
 
 .nav-link:hover{
     color: white !important;
-    text-decoration: underline;
 }
 
 .navbar-nav .nav-item {
@@ -68,20 +75,14 @@ body{
     padding-bottom: 3rem;
 }
 
-.menu-bottom-item{
-    color: var(--secundary-color);
-    text-decoration: none;
-}
-
-.menu-bottom-item:hover{
-    text-decoration: underline;
-}
-
+.menu-bottom-item,
 .menu-bottom-separator{
     color: var(--secundary-color);
     text-decoration: none;
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
+}
+
+.menu-bottom-separator {
+    margin: 0 1.5rem;
 }
 
 .description-text{
@@ -93,20 +94,20 @@ body{
 }
 
 .line{
-    margin-left: 1rem;
-    margin-right: 1rem;
-    max-width: 119px; /*DA FARE MEDIA QUERY*/
+    max-width: 119px;
     height: 2px;
     background-color: var(--secundary-color);
+    margin-right: 1rem;
 }
+
+.line.description{
+    margin-left: 1rem;
+}
+
 .contact-text{
     font-size: 2vw;
     color: var(--secundary-color);
     text-decoration: none;
-}
-
-.contact-text:hover{
-    text-decoration: underline;
 }
 
 .logo-transparent {
@@ -173,18 +174,12 @@ body{
 }
 
 .service-card-text {
-    display: none; /* Nasconde completamente l'elemento */
-    opacity: 0; /* Rende il testo trasparente */
-    transform: translateY(20px); /* Posiziona il testo verso il basso */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Effetto fluido */
+    display: none;
 }
 
 .service-card:hover .service-card-text {
-    display: block; /* Mostra l'elemento */
-    opacity: 1; /* Rende il testo visibile */
-    transform: translateY(0); /* Riporta il testo nella posizione originale */
+    display: block;
 }
-
 
 
 /*PARTNERS*/
@@ -211,12 +206,6 @@ body{
 
 .partner-image:hover {
     transform: scale(1.2);
-}
-
-.partner-line{
-    background-color: var(--secundary-color);
-    height: 2px;
-    max-width: 119px;
 }
 
 /*CONTACT*/
@@ -318,123 +307,7 @@ textarea {
     text-decoration: none;
 }
 
-.footer-link:hover {
-    text-decoration: underline;
-}
-
 .footer-icon-image {
     max-width: 50px;
     height: auto;
-}
-
-
-@media (max-width: 768px) {
-    /*HEADER E NAVBAR*/
-    .header-container{
-        height: 60vh;
-    }
-    .nav-link{
-        font-size: 7vw;
-    }
-
-    .brand-name{
-        margin-top: 4rem; /*posizionamento del nome TINTART*/
-        margin-left: 3rem;
-    }
-
-    .brand-title{
-        font-size: 10vw;
-    }
-    
-    .brand-subtitle{
-        font-size: 4vw;
-    }
-
-    /*DESCRIPTION*/
-    .description-container{
-        padding: 2rem
-    }
-
-    .description-text{
-        font-size: 4vw; 
-    }
-
-    .contact-description-container{
-        margin-top: 1rem;
-    }
-
-    .menu-bottom{
-        font-size: 2.5vw;
-        padding-bottom: 3vh;
-    }
-
-    .menu-bottom-separator{
-        margin-right: 0.5rem;
-        margin-left: 0.5rem;
-    }
-
-    .line{
-        height: 1px;
-        max-width: 50px;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-    }
-
-    .logo-transparent{
-        width: 35%;
-    }
-
-    /*SERVICES*/
-    .service-card-image{
-        height: 300px;
-    }
-
-    .service-card-title {
-        font-size: 1.2rem;
-        display: flex;
-    }
-
-    .overlay {
-        padding: 1rem;
-    }
-
-    /*PARTNER*/
-    .partner-container{
-        padding-top: 2.5rem;
-    }
-    
-    .partner-title{
-        font-size: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .partner-image-subtitle{
-        font-size: 0.8rem;
-        opacity: 0.7;
-    }
-
-    .partner-image{
-        width: 70px;
-    }
-
-    /*CONTACTS */
-    .contact-container{
-        display: none;
-    }
-    .contact-service-text{
-        font-size: 4vw;
-    }
-    .contact-service-link{
-        font-size: 4.2vw;
-    }
-    .contact-service-container.mobile{
-        background-color: var(--primary-color);
-        display: block;
-    }
-    .contact-title {
-        font-size: 1.5rem;
-    }
-
-    /*FOOTER*/
-
 }
