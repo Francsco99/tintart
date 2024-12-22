@@ -12,7 +12,58 @@ body{
     padding: 0;
 }
 
+td, th {
+    text-align: center;
+}
+
 .header-container.lavori{
     height: 60vh;
     background-image: url('../images/jpg/decorativa-1.jpg');
 }
+
+.lavori-container{
+    background-color: var(--primary-color);
+}
+
+.lavori-container-mobile{
+    background-color: var(--primary-color);
+    display: none;
+}
+
+.table {
+    border-collapse: collapse;
+    font-size: 1.5vw;
+}
+
+.year-cell {
+    font-weight: bold;
+}
+
+#hover-image {
+    z-index: 1000; /* Assicura che sia sopra gli altri elementi */
+    pointer-events: none; /* Evita che il box interferisca con il mouse */
+}
+
+.hover-row {
+    cursor: pointer; /* Cambia il cursore per segnalare l'interattività */
+}
+
+.hover-row:hover {
+    background-color: #f8f9fa; /* Evidenzia la riga al passaggio del mouse */
+}
+
+/* Bordo orizzontale per le righe standard */
+.border-row td:not(:first-child) {
+    border-bottom: 1px solid var(--secundary-color);
+}
+
+/* Bordo più spesso tra gli anni */
+.border-bottom-year td:not(:first-child) {
+    border-bottom: 3px solid var(--secundary-color);
+}
+
+/* Rimuovi i bordi verticali e altri bordi indesiderati */
+.table td:first-child, .table th:first-child {
+    border-bottom: none;
+}
+

@@ -108,4 +108,10 @@
 
     /*FOOTER*/
 
+    .lavori-container-mobile{
+        display: block;
+    }
+    .lavori-container{
+        display: none;
+    }
 }
