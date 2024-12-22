@@ -171,7 +171,7 @@ a:hover{
     padding: 3rem;
     color: white;
     z-index: 1;
-    text-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
 }
 
 .service-title {
@@ -189,14 +189,9 @@ a:hover{
     height: 600px;
 }
 
-.service-text {
+.overlay .service-text {
     display: none;
-}
-
-.service:hover .service-text {
-    display: block;
-}
-
+  }
 
 /*PARTNERS*/
 .partner-container{
