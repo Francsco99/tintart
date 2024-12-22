@@ -3,6 +3,7 @@
 :root{
     --primary-color: #E8E5DC;
     --secundary-color: #1A1006;
+    --secundary-color-lighter: #3C2E21;
 }
 
 body{
@@ -20,6 +21,22 @@ a:hover{
     font-weight: bold;
 }
 
+.selected{
+    text-decoration: underline;
+}
+
+.btn-dark {
+    background-color: var(--secundary-color);
+    color: white;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-dark:hover {
+    background-color: var(--secundary-color-lighter);
+    text-decoration: none;
+}
+
 /*HEADER E NAVBAR*/
 .header-container{
     height: 80vh;
@@ -33,14 +50,6 @@ a:hover{
     font-size: 2vw;
     color: white;
     font-weight: 600 !important;
-}
-
-.nav-link.selected{
-    text-decoration: underline;
-}
-
-.nav-link:hover{
-    color: white !important;
 }
 
 .navbar-nav .nav-item {
@@ -234,23 +243,6 @@ a:hover{
     background-color: var(--primary-color);
     font-weight: lighter;
 
-}
-
-
-.btn-dark {
-    background-color: var(--secundary-color);
-    color: #ffffff;
-    border: none;
-    transition: all 0.3s ease-in-out;
-}
-
-.btn-dark:hover {
-    background-color: #3C2E21; /* Colore più chiaro al passaggio del mouse */
-}
-
-textarea {
-    resize: none;
-    min-height: 20vw !important;
 }
 
 /*FOOTER*/
