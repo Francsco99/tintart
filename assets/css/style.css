@@ -81,7 +81,7 @@ a:hover{
 
 .menu-bottom{
     font-size: 2vw;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
 }
 
 .menu-bottom-item,
@@ -151,7 +151,7 @@ a:hover{
 
 
 /*SERVICES*/
-.service-card {
+.service {
     position: relative;
     overflow: hidden;
 }
@@ -167,26 +167,26 @@ a:hover{
     text-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
 }
 
-.service-card-title {
+.service-title {
     font-size: 1.8rem;
     display: flex;
 }
 
-.service-card-text {
+.service-text {
     font-size: 1.4rem;
 }
 
-.service-card-image{
+.service-image{
     object-fit: cover;
     width: auto;
     height: 600px;
 }
 
-.service-card-text {
+.service-text {
     display: none;
 }
 
-.service-card:hover .service-card-text {
+.service:hover .service-text {
     display: block;
 }
 
@@ -281,6 +281,7 @@ a:hover{
 .footer-description{
     margin-top: 1.5rem;
 }
+
 
 .footer-address{
     margin-top: 3rem;
