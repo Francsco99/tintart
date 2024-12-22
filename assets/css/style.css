@@ -246,7 +246,7 @@ a:hover{
 
 .form-control {
     border: 2px solid var(--secundary-color) ;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     background-color: var(--primary-color);
     font-weight: lighter;
 
@@ -254,59 +254,26 @@ a:hover{
 
 /*FOOTER*/
 .footer-container {
+    padding-top: 1rem;
     background-color: var(--secundary-color);
     color: var(--primary-color);
-    padding-top: 1rem;
 }
 
-.footer-logo-container{
-    padding-left: 0px;
-}
-
-.footer-logo {
-    position: relative;
-}
-
-.footer-logo-front {
-    width: 30%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 2rem;
-}
-
-.footer-heading {
+.footer-title {
     font-size: 1.1rem;
-    margin-bottom: 0.5rem;
 }
 
 .footer-text {
     font-size: 0.9rem;
-    margin: 0;
 }
 
-.footer-description{
-    margin-top: 1.5rem;
-}
-
-.footer-address{
-    margin-top: 3rem;
-}
-
-.footer-ajalab{
-    padding: 0.5rem;
-}
-
-.footer-ajalab p{
-    font-size: 1.2rem;
-}
-
-.footer-link {
+.footer-link{
     color: var(--primary-color);
     text-decoration: none;
 }
 
-.footer-icon-image {
-    max-width: 50px;
-    height: auto;
+.footer-bottom-logo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
