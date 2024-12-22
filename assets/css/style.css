@@ -3,10 +3,8 @@
 :root{
     --primary-color: #E8E5DC;
     --secundary-color: #1A1006;
-
-
-
 }
+
 body{
     font-family: "Archivo", serif;
     overflow-x: hidden;
@@ -16,8 +14,8 @@ body{
 
 /*HEADER E NAVBAR*/
 .header-container{
-    min-height: 90vh;
-    background-image: url("../images/png/banner.png");
+    height: 80vh;
+    background-image: url("../images/jpg/decorativa-2.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
@@ -52,13 +50,13 @@ body{
 .description-container{
     min-height: 15vh;
     background-color: var(--primary-color);
-    padding: 3rem 6rem; /*DA FARE MEDIA QUERY*/
+    padding: 3rem 6rem;
     overflow: hidden;
 }
 
 .menu-bottom{
     font-size: 2vw;
-    margin-bottom: 7rem;
+    margin-bottom: 10vh;
 }
 
 .menu-bottom-item{
@@ -77,11 +75,17 @@ body{
     margin-left: 1.5rem;
 }
 
-
 .description-text{
     font-size: min(8vw,2.5vw); /*DA FARE MEDIA QUERY*/
 }
+
+.contact-description-container{
+    margin-top: 3rem;
+}
+
 .line{
+    margin-left: 1rem;
+    margin-right: 1rem;
     max-width: 119px; /*DA FARE MEDIA QUERY*/
     height: 2px;
     background-color: var(--secundary-color);
@@ -100,40 +104,10 @@ body{
     z-index: 1;
 }
 
-@media (max-width: 768px) {
-    .nav-link{
-        font-size: 8vw;
-    }
-    .description-container{
-        padding: 1rem
-    }
-
-    .line{
-        max-width: 50px;
-    }
-
-    .logo-transparent{
-        width: 35%;
-    }
-
-    .logo-image{
-        width: 50px;
-    }
-
-    .contact-container{
-        display: none;
-    }
-
-    body{
-        overflow-x: hidden;
-    }
-}
-
 /*SERVICES*/
 .service-card {
     position: relative;
     overflow: hidden;
-    transition: transform 0.6s ease-in-out;
 }
 
 .overlay {
@@ -144,13 +118,12 @@ body{
     padding: 3rem;
     color: white;
     z-index: 1;
-    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+    text-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
 }
 
 .service-card-title {
     font-size: 1.8rem;
     display: flex;
-    
 }
 
 .service-card-text {
@@ -159,16 +132,23 @@ body{
 
 .service-card-image{
     object-fit: cover;
+    width: auto;
+    height: 600px;
 }
 
-.service-card-text{
-    display: none;
-
+.service-card-text {
+    display: none; /* Nasconde completamente l'elemento */
+    opacity: 0; /* Rende il testo trasparente */
+    transform: translateY(20px); /* Posiziona il testo verso il basso */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Effetto fluido */
 }
 
-.service-card:hover .service-card-text{
-    display: block;
+.service-card:hover .service-card-text {
+    display: block; /* Mostra l'elemento */
+    opacity: 1; /* Rende il testo visibile */
+    transform: translateY(0); /* Riporta il testo nella posizione originale */
 }
+
 
 
 /*PARTNERS*/
@@ -182,27 +162,28 @@ body{
     margin-bottom: 3rem;
 }
 
-.logo-image {
+.partner-image-subtitle{
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+.partner-image {
     max-width: 150px; 
     transition: transform 0.3s ease-in-out;
     margin-bottom: 1rem;
 }
 
-.logo-image:hover {
+.partner-image:hover {
     transform: scale(1.2);
 }
 
-.logo-subtitle{
-    font-size: 1.2rem;
-    opacity: 0.7;
-}
-
 /*CONTACT*/
+.contact-container-mobile{
+    padding: 2rem 0 3rem 0;
+    display: none;
+}
 .contact-container {
-    padding-top: 3rem;
-    padding-bottom: 5rem;
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding: 3rem 4rem 5rem 4rem; /*top right bottom left*/
     background-color: var(--primary-color);
 }
 
@@ -302,4 +283,106 @@ textarea {
 .footer-icon-image {
     max-width: 50px;
     height: auto;
+}
+
+
+@media (max-width: 768px) {
+    /*HEADER E NAVBAR*/
+    .header-container{
+        height: 60vh;
+    }
+    .nav-link{
+        font-size: 7vw;
+    }
+
+    .brand-name{
+        margin-top: 4rem; /*posizionamento del nome TINTART*/
+        margin-left: 3rem;
+    }
+
+    .brand-title{
+        font-size: 10vw;
+    }
+    
+    .brand-subtitle{
+        font-size: 4vw;
+    }
+
+    /*DESCRIPTION*/
+    .description-container{
+        padding: 1rem 1rem 2rem 1rem
+    }
+
+    .contact-description-container{
+        margin-top: 1rem;
+    }
+
+    .menu-bottom{
+        font-size: 2.5vw;
+        margin-bottom: 3vh;
+    }
+
+    .menu-bottom-separator{
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    .line{
+        height: 1px;
+        max-width: 50px;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .logo-transparent{
+        width: 35%;
+    }
+
+    /*SERVICES*/
+    .service-card-image{
+        height: 300px;
+    }
+
+    .service-card-title {
+        font-size: 1.2rem;
+        display: flex;
+    }
+
+    .overlay {
+        padding: 1rem;
+    }
+
+    /*PARTNER*/
+    .partner-container{
+        padding-top: 2.5rem;
+    }
+    
+    .partner-title{
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .partner-image-subtitle{
+        font-size: 0.8rem;
+        opacity: 0.7;
+    }
+
+    .partner-image{
+        width: 50px;
+    }
+
+    /*CONTACTS */
+    .contact-container{
+        display: none;
+    }
+    .contact-container-mobile{
+        background-color: var(--primary-color);
+        display: block;
+    }
+    .contact-title {
+        font-size: 1.5rem;
+    }
+
+    /*FOOTER*/
+    
 }
