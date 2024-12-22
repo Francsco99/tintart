@@ -21,3 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.querySelectorAll('.border-row').forEach(row => {
+    row.addEventListener('click', function () {
+       // Recupera l'attributo data-href e reindirizza alla pagina
+       window.location.href = this.dataset.href;
+    });
+ });
