@@ -127,22 +127,22 @@ a:hover{
     z-index: 1;
 }
 
-.contact-service-container.mobile{
+.contact-bottom-container.mobile{
     display: none;
 }
 
-.contact-service-container{
+.contact-bottom-container{
     padding-top: 3rem;
     padding-bottom: 3rem;
     background-color: var(--primary-color);
     color: var(--secundary-color);
 }
 
-.contact-service-text{
+.contact-bottom-text{
     font-size: 2vw;
 }
 
-.contact-service-link{
+.contact-bottom-link{
     text-decoration: none;
     font-weight: bold;
     font-size: 2.2vw;
@@ -281,7 +281,6 @@ a:hover{
 .footer-description{
     margin-top: 1.5rem;
 }
-
 
 .footer-address{
     margin-top: 3rem;

@@ -92,13 +92,13 @@
     .contact-container{
         display: none;
     }
-    .contact-service-text{
+    .contact-bottom-text{
         font-size: 4vw;
     }
-    .contact-service-link{
+    .contact-bottom-link{
         font-size: 4.2vw;
     }
-    .contact-service-container.mobile{
+    .contact-bottom-container.mobile{
         background-color: var(--primary-color);
         display: block;
     }
