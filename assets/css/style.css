@@ -21,11 +21,6 @@ body{
     background-position: center;
 }
 
-.header-container.alternative{
-    background-color: var(--secundary-color);
-    background-image: none;
-}
-
 .nav-link{
     font-size: 2vw;
     color: white;

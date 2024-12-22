@@ -12,21 +12,38 @@ body{
     padding: 0;
 }
 
+.header-container.services{
+    height: 60vh;
+    background-image: url('../images/png/decorativa-4.png');
+}
+
+.nav-link{
+    font-size: 2vw;
+    color: var(--secundary-color);
+    font-weight: 600 !important;
+}
+
+.brand-title{
+    font-size: 8vw;
+    font-weight: bold !important;
+    color: var(--secundary-color);
+}
+
 .menu-bottom-container.alternative{
-    background-color: var(--secundary-color);
+    padding-top: 2rem;
+    background-color: var(--primary-color);
 }
 
 .menu-bottom-item.alternative{
-    color: var(--primary-color);
+    color: var(--secundary-color);
 }
 
 .menu-bottom-separator.alternative{
-    color: var(--primary-color);
+    color: var(--secundary-color);
 }
 
 .services-cards-container{
     background-color: var(--primary-color);
-    padding-top: 2rem;
 }
 
 .service-card-description{
@@ -46,12 +63,24 @@ body{
     margin-right: 1rem;
 }
 
-.service-card-link-text{
+.service-card-link{
+    color: var(--secundary-color);
+    text-decoration: none;
     font-size: 1.2vw;
 }
 
-.service-card-link-text .anchor{
+.service-card-link .highlight{
     color: var(--secundary-color);
-    text-decoration: none;
     font-weight: bold;
+}
+
+.service-card-link:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .service-card-image{
+        width: 360px;
+        height: 230px;
+    }
 }
