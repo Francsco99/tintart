@@ -3,8 +3,6 @@
 :root{
     --primary-color: #E8E5DC;
     --secundary-color: #1A1006;
-    --bs-navbar-active-color: #ffff;
-    --bs-nav-link-hover-color: #ffff;
 }
 
 body{
@@ -21,6 +19,11 @@ body{
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
+}
+
+.header-container.alternative{
+    background-color: var(--secundary-color);
+    background-image: none;
 }
 
 .nav-link{
@@ -67,7 +70,7 @@ body{
 
 .menu-bottom{
     font-size: 2vw;
-    margin-bottom: 10vh;
+    padding-bottom: 3rem;
 }
 
 .menu-bottom-item{
@@ -107,6 +110,10 @@ body{
     text-decoration: none;
 }
 
+.contact-text:hover{
+    text-decoration: underline;
+}
+
 .logo-transparent {
     position: absolute;
     top: 0;
@@ -114,6 +121,29 @@ body{
     width: 20%;
     z-index: 1;
 }
+
+.contact-service-container.mobile{
+    display: none;
+}
+
+.contact-service-container{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
+}
+
+.contact-service-text{
+    font-size: 2vw;
+}
+
+.contact-service-link{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2.2vw;
+    color: var(--secundary-color);
+}
+
 
 /*SERVICES*/
 .service-card {
@@ -186,6 +216,12 @@ body{
 
 .partner-image:hover {
     transform: scale(1.2);
+}
+
+.partner-line{
+    background-color: var(--secundary-color);
+    height: 2px;
+    max-width: 119px;
 }
 
 /*CONTACT*/
@@ -334,7 +370,7 @@ textarea {
 
     .menu-bottom{
         font-size: 2.5vw;
-        margin-bottom: 3vh;
+        padding-bottom: 3vh;
     }
 
     .menu-bottom-separator{
@@ -383,14 +419,20 @@ textarea {
     }
 
     .partner-image{
-        width: 50px;
+        width: 70px;
     }
 
     /*CONTACTS */
     .contact-container{
         display: none;
     }
-    .contact-container-mobile{
+    .contact-service-text{
+        font-size: 4vw;
+    }
+    .contact-service-link{
+        font-size: 4.2vw;
+    }
+    .contact-service-container.mobile{
         background-color: var(--primary-color);
         display: block;
     }

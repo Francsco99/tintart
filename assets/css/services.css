@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-color: #E8E5DC;
+    --secundary-color: #1A1006;
+}
+
+body{
+    font-family: "Archivo", serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-bottom-container.alternative{
+    background-color: var(--secundary-color);
+}
+
+.menu-bottom-item.alternative{
+    color: var(--primary-color);
+}
+
+.menu-bottom-separator.alternative{
+    color: var(--primary-color);
+}
+
+.services-cards-container{
+    background-color: var(--primary-color);
+    padding-top: 2rem;
+}
+
+.service-card-description{
+    color: var(--secundary-color);
+    font-size: 2vw;
+}
+
+.service-card-image{
+    width: 720px;
+    height: 460px;
+}
+
+.service-card-line{
+    background-color: var(--secundary-color);
+    height: 2px;
+    max-width: 119px;
+    margin-right: 1rem;
+}
+
+.service-card-link-text{
+    font-size: 1.2vw;
+}
+
+.service-card-link-text .anchor{
+    color: var(--secundary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
