@@ -3,6 +3,8 @@
 :root{
     --primary-color: #E8E5DC;
     --secundary-color: #1A1006;
+    --bs-navbar-active-color: #ffff;
+    --bs-nav-link-hover-color: #ffff;
 }
 
 body{
@@ -25,6 +27,15 @@ body{
     font-size: 2vw;
     color: white;
     font-weight: 600 !important;
+}
+
+.nav-link.selected{
+    text-decoration: underline;
+}
+
+.nav-link:hover{
+    color: white !important;
+    text-decoration: underline;
 }
 
 .navbar-nav .nav-item {
@@ -76,7 +87,7 @@ body{
 }
 
 .description-text{
-    font-size: min(8vw,2.5vw); /*DA FARE MEDIA QUERY*/
+    font-size: 2.5vw; 
 }
 
 .contact-description-container{
@@ -310,7 +321,11 @@ textarea {
 
     /*DESCRIPTION*/
     .description-container{
-        padding: 1rem 1rem 2rem 1rem
+        padding: 2rem
+    }
+
+    .description-text{
+        font-size: 4vw; 
     }
 
     .contact-description-container{
@@ -384,5 +399,5 @@ textarea {
     }
 
     /*FOOTER*/
-    
+
 }
