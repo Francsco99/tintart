@@ -10,11 +10,55 @@ body{
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    background-color: var(--primary-color);
 }
+
 .nav-container{
     background-color: var(--primary-color);
 }
 
 .lavoro-container{
     background-color: var(--primary-color);
+}
+
+.lavoro-title {
+    font-size: 3.5vw;
+    font-weight: bold;
+}
+
+.main-image {
+    height: 400px;
+    overflow: hidden;
+}
+
+.thumbnail-image {
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+#largeImage {
+	transition: opacity 0.5s ease-in-out;
+	opacity: 1;
+}
+
+div.hover-zoom{
+  overflow: hidden;
+}
+
+.hover-zoom img{
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.hover-zoom:hover img{
+  transform: scale(1.1); /* Zoom dell'immagine */
+}
+
+.table {
+  border-collapse: collapse;
+  font-size: 1.5vw;
+}
+
+.border-row td{
+  border-bottom: 1px solid var(--secundary-color);
 }
