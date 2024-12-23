@@ -115,6 +115,10 @@
         display: none;
     }
 
+    .table{
+        font-size: 3vw; /*VALE ANCHE PER LAVORO*/
+    }
+
     /*SERVIZI PAGE*/
     .service-card-image{
         height: 150px;
