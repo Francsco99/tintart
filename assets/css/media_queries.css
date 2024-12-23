@@ -1,11 +1,12 @@
 @media (max-width: 768px) {
     /*HEADER E NAVBAR*/
     .header-container,
-    .header-container.services{
-        height: 40vh;
+    .header-container.servizi,
+    .header-container.lavori{
+        height: 30vh;
     }
     .nav-link{
-        font-size: 7vw;
+        font-size: 5.5vw;
     }
 
     .brand-name{
@@ -21,7 +22,7 @@
         font-size: 4vw;
     }
 
-    /*DESCRIPTION*/
+    /*DESCRIPTION INDEX*/
     .description-container{
         padding: 2rem
     }
@@ -46,16 +47,14 @@
 
     .line{
         height: 1px;
-        max-width: 50px;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+        max-width: 30px;
     }
 
     .logo-transparent{
         width: 35%;
     }
 
-    /*SERVICES*/
+    /*SERVICES INDEX*/
     .service-image{
         height: 300px;
     }
@@ -108,10 +107,20 @@
 
     /*FOOTER*/
 
+    /*LAVORI PAGE*/
     .lavori-container-mobile{
         display: block;
     }
     .lavori-container{
         display: none;
+    }
+
+    /*SERVIZI PAGE*/
+    .service-card-image{
+        height: 150px;
+    }
+
+    .service-card-link{
+        font-size: 1.4vw;
     }
 }

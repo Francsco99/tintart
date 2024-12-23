@@ -45,7 +45,7 @@ td, th {
     pointer-events: none;
     display: none; 
     position: absolute;
-    border: #1A1006 1px solid;
+    border: var(--secundary-color) 1px solid;
 }
 
 .hover-row {

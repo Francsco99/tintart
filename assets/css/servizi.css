@@ -40,9 +40,3 @@ body{
 .service-card-link .highlight{
     color: var(--secundary-color);
 }
-
-@media (max-width: 768px) {
-    .service-card-image{
-        height: 150px;
-    }
-}
