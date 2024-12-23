@@ -12,6 +12,7 @@
 .service-card-description{
     color: var(--secundary-color);
     font-size: 2vw;
+    padding: 3rem 4rem;
 }
 
 .service-card-image{
@@ -19,10 +20,20 @@
     height: 460px;
 }
 
+.services-cards-container .row:nth-child(odd) .col-6 img {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.services-cards-container .row:nth-child(even) .col-6 img {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
 .service-card-link{
     color: var(--secundary-color);
     text-decoration: none;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
 }
 
 .service-card-link .highlight{

@@ -1,5 +1,11 @@
 @import url('./base.css');
 
+td, th {
+  text-align: start;
+  color: var(--secundary-color);
+}
+
+
 .thumbnail-image img{
   border-radius: 5px;
   border: var(--secundary-color) 1px solid;
@@ -10,9 +16,10 @@
 }
 
 .lavoro-container{
+    color: var(--secundary-color);
     background-color: var(--primary-color);
     padding-top: 1rem;
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
 }
 
 .lavoro-title {

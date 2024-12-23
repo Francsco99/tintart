@@ -50,7 +50,8 @@
 .description-container{
     min-height: 15vh;
     background-color: var(--primary-color);
-    padding: 3rem 6rem;
+    color: var(--secundary-color);
+    padding: 8rem 6rem;
     overflow: hidden;
 }
 
@@ -89,7 +90,7 @@
 }
 
 .contact-text{
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: var(--secundary-color);
     text-decoration: none;
 }
@@ -193,7 +194,7 @@
     display: none;
 }
 .contact-container {
-    padding: 3rem 4rem 5rem 4rem; /*top right bottom left*/
+    padding: 8rem 4rem 5rem 4rem; /*top right bottom left*/
     background-color: var(--primary-color);
 }
 
@@ -240,3 +241,8 @@
     bottom: 0;
     right: 0;
 }
+
+#ajalabIcon {
+    cursor: pointer;
+    z-index: 1;
+ }

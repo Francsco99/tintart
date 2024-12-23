@@ -1,15 +1,12 @@
 @import url('./base.css');
 
-td, th {
-    text-align: center;
-}
-
 .header-container.lavori{
     height: 60vh;
     background-image: url('../images/jpg/decorativa-1.jpg');
 }
 
 .lavori-container{
+    color: var(--secundary-color);
     background-color: var(--primary-color);
 }
 
@@ -40,7 +37,7 @@ td, th {
 }
 
 .hover-row:hover {
-    background-color: var(--primary-color-lighter);
+    background-color: #f6f6f6;
 }
 
 /* Bordo orizzontale per le righe standard */

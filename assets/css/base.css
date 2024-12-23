@@ -4,7 +4,7 @@
     --primary-color: #E8E5DC;
     --secundary-color: #1A1006;
     --secundary-color-lighter: #3C2E21;
-    --primary-color-lighter: #e8e5dcc1;
+    --primary-color-lighter: #f6f6f6;
 }
 
 body{
@@ -12,6 +12,11 @@ body{
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+}
+
+td, th {
+    text-align: center;
+    color: var(--secundary-color);
 }
 
 a:hover{

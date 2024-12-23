@@ -123,6 +123,7 @@
     .table{
         font-size: 3vw; /*VALE ANCHE PER LAVORO*/
     }
+    
 
     /*SERVIZI PAGE*/
     .service-card-image{
@@ -131,5 +132,9 @@
 
     .service-card-link{
         font-size: 1.4vw;
+    }
+
+    .service-card-description{
+        padding: 0.5rem 1rem;
     }
 }
