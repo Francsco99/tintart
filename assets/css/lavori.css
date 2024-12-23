@@ -3,6 +3,7 @@
 :root{
     --primary-color: #E8E5DC;
     --secundary-color: #1A1006;
+    --primary-color-lighter: #f4f1e7;
 }
 
 body{
@@ -40,16 +41,19 @@ td, th {
 }
 
 #hover-image {
-    z-index: 1000; /* Assicura che sia sopra gli altri elementi */
-    pointer-events: none; /* Evita che il box interferisca con il mouse */
+    z-index: 1000;
+    pointer-events: none;
+    display: none; 
+    position: absolute;
+    border: #1A1006 1px solid;
 }
 
 .hover-row {
-    cursor: pointer; /* Cambia il cursore per segnalare l'interattività */
+    cursor: pointer;
 }
 
 .hover-row:hover {
-    background-color: #f8f9fa; /* Evidenzia la riga al passaggio del mouse */
+    background-color: var(--primary-color-lighter);
 }
 
 /* Bordo orizzontale per le righe standard */
