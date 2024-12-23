@@ -32,13 +32,18 @@
 }
 
 .header-title{
-    font-size: 8vw;
+    font-size: 6vw;
     font-weight: bold;
 }
 
 .header-subtitle,
 .header-description{
-    font-size: 2vw;
+    font-size: 1.5vw;
+}
+
+.header-subtitle{
+    margin-top: -2rem;
+    margin-left: 1rem;
 }
 
 /*DESCRIPTION*/
