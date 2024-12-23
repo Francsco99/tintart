@@ -11,6 +11,8 @@
 
 .lavoro-container{
     background-color: var(--primary-color);
+    padding-top: 1rem;
+    padding-bottom: 3rem;
 }
 
 .lavoro-title {
