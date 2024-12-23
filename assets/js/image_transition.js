@@ -5,4 +5,4 @@ function changePhoto(photoSrc) {
         largeImage.src = photoSrc;
         largeImage.style.opacity = 1; // Ripristina l'opacità
     }, 300); // Durata della dissolvenza deve coincidere con la durata della transizione
-  }
+}
