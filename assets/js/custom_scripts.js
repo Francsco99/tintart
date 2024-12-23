@@ -1,3 +1,4 @@
+/*Transizione foto pagina lavoro*/
 function changePhoto(photoSrc) {
     const $largeImage = $("#largeImage"); // Seleziona l'immagine utilizzando jQuery
     $largeImage.css("opacity", 0); // Inizia la dissolvenza impostando l'opacità a 0
@@ -8,6 +9,7 @@ function changePhoto(photoSrc) {
     }, 300); // Durata della dissolvenza (300ms)
 }
 
+/*Testo smooth pagina index card servizi*/
 $(function () {
     // Seleziona l'elemento service
     $('.service').hover(
@@ -22,6 +24,7 @@ $(function () {
     );
   });
 
+/*Tabella pagina lavori*/
 $(document).ready(function () {
     const $hoverImage = $('#hover-image'); // Seleziona l'immagine di hover
     const $tableRows = $('.hover-row'); // Seleziona tutte le righe con la classe .hover-row
