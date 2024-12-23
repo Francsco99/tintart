@@ -1,17 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
-
-:root{
-    --primary-color: #E8E5DC;
-    --secundary-color: #1A1006;
-    --primary-color-lighter: #f4f1e7;
-}
-
-body{
-    font-family: "Archivo", serif;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-}
+@import url('./base.css');
 
 td, th {
     text-align: center;

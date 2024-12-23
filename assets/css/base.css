@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-color: #E8E5DC;
+    --secundary-color: #1A1006;
+    --secundary-color-lighter: #3C2E21;
+    --primary-color-lighter: #e8e5dcc1;
+}
+
+body{
+    font-family: "Archivo", serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.highlight{
+    font-weight: bold;
+}
+
+.selected{
+    text-decoration: underline;
+}
+
+.btn-dark {
+    background-color: var(--secundary-color);
+    color: white;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-dark:hover {
+    background-color: var(--secundary-color-lighter);
+    text-decoration: none;
+}
