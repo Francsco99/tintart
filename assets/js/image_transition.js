@@ -1,8 +1,9 @@
 function changePhoto(photoSrc) {
-    const largeImage = document.getElementById("largeImage");
-    largeImage.style.opacity = 0; // Inizia la dissolvenza
+    const $largeImage = $("#largeImage"); // Seleziona l'immagine utilizzando jQuery
+    $largeImage.css("opacity", 0); // Inizia la dissolvenza impostando l'opacità a 0
+
     setTimeout(() => {
-        largeImage.src = photoSrc;
-        largeImage.style.opacity = 1; // Ripristina l'opacità
-    }, 300); // Durata della dissolvenza deve coincidere con la durata della transizione
+        $largeImage.attr("src", photoSrc); // Cambia la sorgente dell'immagine
+        $largeImage.css("opacity", 1); // Ripristina l'opacità a 1
+    }, 300); // Durata della dissolvenza (300ms)
 }
